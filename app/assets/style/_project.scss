@@ -1,0 +1,269 @@
+// breadcrumb
+.breadcrumb2-bg{
+    background-color: #650300;
+    .breadcrumb2-box{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .breadcrumb2-list{
+        display: flex;
+    }
+    .breadcrumb2-item{
+        margin-right: 48px;
+    }
+    .breadcrumb2-link{
+        color: #fff;
+        font-size: 20px;
+        line-height: 40px;
+        font-weight: 700;
+    }
+    .breadcrumb2-link:hover{
+        opacity: 0.5;
+    }
+    @include pad(){
+        .breadcrumb2-link{
+            font-size: 16px;
+            line-height: 54px;
+        }
+    }
+    @include mobile(){
+        .breadcrumb2-item{
+            margin-right: 16px;
+        }
+        .breadcrumb2-link{
+            font-size: 16px;
+            line-height: 48px;
+        }
+        .search2{
+            display: none;
+        }
+    }
+}
+// 內容
+.project-bg{
+    @include mobile(){
+        padding-bottom: 56px;
+    }
+    // 文章連結
+    .project-list{
+        display: flex;
+        margin-top: 15px;
+    }
+    .project-link{
+        text-decoration: none;
+        color: #000;
+    }
+    .project-link:last-child{
+        color: #AA0601;
+    }
+    @include pad(){
+        .project-list{
+            margin-top: 8px;
+        }
+        .project-link{
+            font-size: 14px;
+            line-height: 24px;
+        }
+    }
+    // 文章頭標籤
+    .project-keyword{
+        display: flex;
+        margin-top: 20px;
+    }
+    .keyword-link{
+        font-size: 24px;
+        font-weight: bold;
+        text-decoration: none;
+        color: #AA0601;
+    }
+    .keyword-link:first-child{
+        margin-right: 10px;
+    }
+    @include pad(){
+        .project-keyword{
+            margin-top: 0;
+        }
+        .keyword-link{
+            font-size: 16px;
+            line-height: 36px;
+        }
+    }
+    @include mobile(){
+        .keyword-link{
+            font-size: 14px;
+            line-height: 30px;
+        }
+    }
+    // 文章
+    .article-content{
+        display: flex;
+    }
+    .article{
+        width: 825px;
+    }
+    .heading{
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 75px;
+    }
+    .sub-standard{
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 42px;
+        margin-bottom: 24px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .article-date{
+        font-size: 16px;
+        font-weight: normal;
+    }
+    .article-img{
+        max-width: 100%;
+    }
+    .article-word{
+        line-height: 1.5;
+        padding: 24px 0;
+    }
+    // share
+    .share-box{
+        width: 825px;
+    }
+    .share{
+        display: flex;
+        align-items: center;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid #000;
+    }
+    .share-title{
+        font-weight: bold;
+        margin-right: 15px;
+    }
+    .share-list{
+        display: flex;
+        width: 60px;
+        justify-content: space-between;
+    }
+    .page-go{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 160px;
+    }
+    .page-item{
+        display: flex;
+        align-items: center;
+    }
+    .previous-icon,.next-icon{
+        width: 16px;
+        height: 16px;
+    }
+    .previous-icon{
+        margin-right: 5px;
+        transform: rotate(180deg);
+    }
+    .next-icon{
+        margin-left: 5px;
+    }
+    @include pad(){
+        .heading{
+            font-size: 32px;
+            line-height: 35px;
+        }
+        .sub-standard{
+            font-size: 16px;
+            line-height:40px;
+        }
+        .article-date{
+            font-size: 14px;
+        }
+        .article{
+            width: 510px;
+        }
+        .share-box{
+            width: 700px;
+        }
+    }
+    @include mobile(){
+        .article-content{
+            flex-direction: column;
+        }
+        .heading{
+            font-size: 20px;
+            line-height: 26px;
+            color: #650300;
+        }
+        .sub-standard{
+            font-size: 14px;
+            line-height:30px;
+            margin-bottom: 20px;
+        }
+        .article-img{
+            width: 100%;
+        }
+        .article,.share-box{
+            width: 345px;
+        }
+        .article{
+            margin-bottom: 20px;
+        }
+        .page-go{
+            flex-direction: column;
+            margin-bottom: 0;
+        }
+        .page-item{
+            font-size: 14px;
+        }
+    }
+    // side tag
+    .side-tag{
+        margin: 40px 0 0 20px;
+    }
+    .tag-title{
+        display: flex;
+        align-items: center;
+        color: #AA0601;
+        font-size: 28px;
+        font-weight: bold;
+    }
+    .tag-heading{
+        margin-left: 10px;
+    }
+    .more-tag{
+        display: flex;
+        flex-wrap: wrap;
+        line-height: 1.5;
+    }
+    .tag-link{
+        text-decoration: none;
+        color: #AA0601;
+        font-size: 22px;
+        font-weight: bold;
+        display: inline-block;
+        margin-left: 10px;
+    }
+    @include pad(){
+        .tag-title{
+            font-size: 20px;
+        }
+        .tag-link{
+            font-size: 16px;
+        }
+    }
+    @include mobile(){
+        .tag-title{
+            margin-bottom: 10px;
+        }
+        .tag-heading{
+            margin-left: 0;
+        }
+        .side-tag{
+            margin: 0;
+        }
+        .tag-icon{
+            width: 25px;
+        }
+    }
+}

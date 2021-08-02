@@ -1,0 +1,62 @@
+// 三點功能
+.product-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .product-item{
+        width: calc(100% / 3);
+        border: 1px solid #DCDCDC;
+    }
+    .product-link{
+        display: flex;
+        align-items: center;
+        font-family: 'Roboto';
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 80px;  
+        justify-content: center;
+        color: #000;
+        padding-top: 8px;
+        border-bottom: 8px solid transparent;
+    }
+    .product-link:hover{
+        border-bottom: 8px solid #AA0601;
+    }
+    .product-icon{
+        width: 40px;
+        margin-right: 10px;
+    }
+    .functional{
+        width: 30px;
+    }
+    @include pad(){
+        .product-link{
+            font-size: 24px;
+            line-height: 40px;
+            padding-top: 4px;
+            border-bottom: 4px solid transparent;
+        }
+        .product-link:hover{
+            border-bottom: 4px solid #AA0601;
+        }
+        .product-icon{
+            width: 30px;
+        }
+        .functional{
+            width: 20px;
+        }
+    }
+    @include mobile(){
+        .product-link{
+            font-size: 14px;
+            line-height: 20px;
+        }
+        .product-icon{
+            width: 14px;
+            margin-right: 5px;
+        }
+        .functional{
+            width: 10px;
+        }
+    }
+}

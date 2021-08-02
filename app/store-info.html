@@ -1,0 +1,105 @@
+---
+title: 門市據點資訊
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+
+<!-- 標題 -->
+<section class="head-bg">
+  <div class="container">
+    <h2 class="heading">門市據點</h2>
+  </div>
+</section>
+<!-- 下拉選單 -->
+<section class="dropdown-bg">
+  <div class="container">
+    <form action="#" class="dropdown-form">
+      <label for="area" class="dropdown-label">選擇地區</label>
+      <select name="area" id="area" class="dropdown-control">
+        <option value="台北市">台北中山旗艦店</option>
+        <option value="新北市">新北中正五福店</option>
+        <option value="新竹市">新竹林森東義店</option>
+        <option value="桃園市">桃園林口香榭店</option>
+        <option value="彰化市">彰化鹿港博東店</option>
+        <option value="苗栗市">苗栗義東三民店</option>
+        <option value="南投市">南投埔里水潭店</option>
+        <option value="台中市">台中八卦垂楊店</option>
+        <option value="嘉義市">嘉義文化泰林店</option>
+        <option value="宜蘭市">宜蘭蘭陽武林店</option>
+        <option value="花蓮市">花蓮岩山柳花店</option>
+        <option value="台南市">台南七股鹽山店</option>
+        <option value="高雄市">高雄七路駁二店</option>
+        <option value="屏東市">屏東海角恆春店</option>
+      </select>
+    </form>
+  </div>
+</section>
+<!-- 門市據點資訊 -->
+<section class="store2-bg">
+  <div class="container">
+    <div class="store2-body">
+      <ul class="store2-card">
+        <li class="store2-item">
+          <img
+            class="store2-img"
+            src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/locate1.jpeg"
+            alt="台北中山旗艦店"
+          />
+          <div class="store2-box">
+            <h3 class="store2-title">台北中山旗艦店</h3>
+            <ul class="store2-list">
+              <li class="store2-info">
+                <img
+                  class="store2-icon store2-ml-img"
+                  src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/icon-phone-black.svg"
+                />
+                <p class="store2-text store2-ml">
+                  電話：<a href="tel:+88620001234" class="store2-tel"
+                    >(02)000-1234</a
+                  >
+                </p>
+              </li>
+              <li class="store2-info">
+                <img
+                  class="store2-icon store2-ml-img"
+                  src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/icon-clock-black.svg"
+                />
+                <p class="store2-text store2-ml">營業時間：10:00-21:00</p>
+              </li>
+              <li class="store2-info address store2-ml-img">
+                <img
+                  class="store2-icon icon-address"
+                  src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/icon-map.svg"
+                />
+                <p class="store2-text store2-ml">
+                  地址：台北市中山區南京東路25巷2-1號
+                </p>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+      <div class="iframe">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d14458.199573148308!2d121.54313133781514!3d25.049344782950595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1zMTAx5Y-w5YyX!5e0!3m2!1szh-TW!2stw!4v1627107024342!5m2!1szh-TW!2stw"
+          width="635"
+          height="508"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </div>
+      <div class="iframe2">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d14458.199573148308!2d121.54313133781514!3d25.049344782950595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1zMTAx5Y-w5YyX!5e0!3m2!1szh-TW!2stw!4v1627107024342!5m2!1szh-TW!2stw"
+          width="350"
+          height="300"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </div>
+    </div>
+  </div>
+</section>
