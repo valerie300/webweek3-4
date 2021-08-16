@@ -8,13 +8,3 @@
         @content;
     }
 }
-.container{
-    width: 1110px;
-    margin: 0 auto;
-    @include pad(){
-        max-width: 690px;
-    }
-    @include mobile(){
-        max-width: 345px;
-    }
-}

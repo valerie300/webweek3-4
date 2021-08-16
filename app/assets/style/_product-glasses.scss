@@ -4,13 +4,13 @@
     margin: 0 1% 104px;
 }
 @include pad(){
-    .product2-item{
+    .product-other-item{
         width: calc(100% / 2 - 2%);
         margin-bottom: 72px;
     }
 }
 @include mobile(){
-    .product2-item{
+    .product-other-item{
         width: 100%;
         margin-bottom: 32px;
         margin-right: 0;
@@ -18,25 +18,25 @@
     }
 }
 // 頁碼
-.pagination2-bg{
+.pagination-other-bg{
     display: none;
 }
 @include mobile(){
-    .pagination2-bg{
+    .pagination-other-bg{
         display: block;
     }
-    .pagination2-bg{
-        .pagination2{
+    .pagination-other-bg{
+        .pagination-other{
             display: flex;
             justify-content: center;
         }
-        .pagination2-link{
+        .pagination-other-link{
             font-size: 17px;
             line-height: 20px;
-            padding: 12px 16px;
+            padding: 6px 10px;
             border: 1px solid #555555;
         }
-        .pagination2-link:hover{
+        .pagination-other-link:hover{
             color: #fff;
             background-color: #000;
         }

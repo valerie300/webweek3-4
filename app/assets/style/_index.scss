@@ -24,8 +24,7 @@
     .promise-desert{
         display: flex;
         justify-content: flex-end;
-        // align-items: center; 沒有效果
-        padding: 308px 407px 0 0;
+        padding-top: 30%;
         color: #650300;
     }
     .content-box{
@@ -43,7 +42,7 @@
     @include pad(){
         background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/banner-sm.png);
         .promise-desert{
-            padding: 372px 38.5px 0 0;
+            padding-top: 50%;
         }
         .content-subtitle{
             font-size: 20px;
@@ -56,9 +55,6 @@
     }
     @include mobile(){
         height: 394px;
-        .promise-desert{
-            padding: 164px 15px 0 0;
-        }
         .content-subtitle{
             font-size: 16px;
             line-height: 22px;
@@ -305,7 +301,7 @@
 }
 // 顧客推薦
 .customer-bg{
-    padding: 60px 0 80px;
+    padding: 60px 0 0;
     @include pad(){
         padding: 40px 0 56px;
     }
@@ -319,7 +315,8 @@
         margin-top: 40px;
     }
     .customer-item{
-        width: 23%;
+        width: 255px;
+        height: 460px;
     }
     .customer-img{
         width: 100%;
@@ -352,7 +349,10 @@
         }
         .customer-item{
             width: 45%;
-            margin-bottom: 32px;
+            height: 460px;
+        }
+        .message-pb{
+            padding-bottom: 8%;
         }
     }
     @include mobile(){
@@ -361,7 +361,9 @@
         }
         .customer-item{
             width: 100%;
-            margin-bottom: 16px;
+        }
+        .message-pb{
+            padding-bottom: 0;
         }
     }
 }

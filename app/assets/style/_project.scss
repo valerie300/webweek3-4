@@ -1,41 +1,41 @@
 // breadcrumb
-.breadcrumb2-bg{
+.breadcrumb-plan-bg{
     background-color: #650300;
-    .breadcrumb2-box{
+    .breadcrumb-plan-box{
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
-    .breadcrumb2-list{
+    .breadcrumb-plan-list{
         display: flex;
     }
-    .breadcrumb2-item{
+    .breadcrumb-plan-item{
         margin-right: 48px;
     }
-    .breadcrumb2-link{
+    .breadcrumb-plan-link{
         color: #fff;
         font-size: 20px;
         line-height: 40px;
         font-weight: 700;
     }
-    .breadcrumb2-link:hover{
+    .breadcrumb-plan-link:hover{
         opacity: 0.5;
     }
     @include pad(){
-        .breadcrumb2-link{
+        .breadcrumb-plan-link{
             font-size: 16px;
             line-height: 54px;
         }
     }
     @include mobile(){
-        .breadcrumb2-item{
+        .breadcrumb-plan-item{
             margin-right: 16px;
         }
-        .breadcrumb2-link{
+        .breadcrumb-plan-link{
             font-size: 16px;
             line-height: 48px;
         }
-        .search2{
+        .search-plan{
             display: none;
         }
     }
@@ -155,6 +155,7 @@
     .page-item{
         display: flex;
         align-items: center;
+        color: #000;
     }
     .previous-icon,.next-icon{
         width: 16px;
