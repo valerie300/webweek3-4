@@ -855,6 +855,15 @@ body {
       -ms-flex-align: center;
           align-items: center; }
 
+.product-name, .product-price {
+  font-family: 'Roboto';
+  font-size: 24px;
+  line-height: 36px; }
+
+.product-price {
+  color: #AA0601;
+  font-weight: 600; }
+
 @media (max-width: 992px) {
   .product-bg {
     padding: 56px 0 96px; }
@@ -873,19 +882,8 @@ body {
     width: 100%;
     margin-bottom: 32px;
     margin-right: 0;
-    margin-left: 0; } }
-
-.name, .price {
-  font-family: 'Roboto';
-  font-size: 24px;
-  line-height: 36px; }
-
-.price {
-  color: #AA0601;
-  font-weight: 600; }
-
-@media (max-width: 767px) {
-  .name, .price {
+    margin-left: 0; }
+  .product-name, .product-price {
     font-size: 16px;
     line-height: 26px; } }
 
@@ -1590,6 +1588,24 @@ body {
   font-size: 20px;
   line-height: 30px; }
 
+.store-address-icon {
+  margin-left: 3px; }
+
+.store-address {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start; }
+
+.store-info-btn {
+  display: block;
+  color: #fff;
+  background-color: #000;
+  text-align: center;
+  padding: 20px 0; }
+
+.store-info-btn:hover {
+  background-color: #b4b4b4; }
+
 @media (max-width: 992px) {
   .store-item {
     width: calc(100% / 2 - 2%); }
@@ -1600,7 +1616,12 @@ body {
     font-size: 14px;
     line-height: 21px; }
   .store-icon {
-    width: 16px; } }
+    width: 16px; }
+  .store-address {
+    margin: 0; }
+  .store-info-btn {
+    font-size: 14px;
+    line-height: 20px; } }
 
 @media (max-width: 767px) {
   .store-item {
@@ -1608,31 +1629,6 @@ body {
   .store-title {
     font-size: 16px;
     line-height: 18px; } }
-
-.icon-address {
-  margin-left: 3px; }
-
-.address {
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start; }
-
-.info-btn {
-  display: block;
-  color: #fff;
-  background-color: #000;
-  text-align: center;
-  padding: 20px 0; }
-
-.info-btn:hover {
-  background-color: #b4b4b4; }
-
-@media (max-width: 992px) {
-  .icon-address {
-    margin: 0; }
-  .info-btn {
-    font-size: 14px;
-    line-height: 20px; } }
 
 .store-detailed-bg {
   padding: 32px 0 160px; }
