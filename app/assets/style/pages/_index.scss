@@ -1,0 +1,462 @@
+// 各區塊標題
+.title{
+    font-size: 48px;
+    line-height: 67px;
+    font-weight: 700;
+    text-align: center;
+    color: #650300;
+    @include pad(){
+        font-size: 32px;
+        line-height: 45px;
+    }
+    @include mobile(){
+        font-size: 24px;
+        line-height: 33px;
+    }
+}
+// banner
+.content{
+    &{
+        height: 840px;
+        min-height: 100%;
+        background-size: cover;
+        background-position: center center;
+        background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/banner.png);
+    }
+    &-desert{
+        display: flex;
+        justify-content: flex-end;
+        padding-top: 30%;
+        color: #650300;
+    }
+    &-box{
+        text-align: right;
+    }
+    &-subtitle{
+        font-size: 36px;
+        line-height: 50px;
+    }
+    &-bigtitle{
+        font-size: 64px;
+        line-height: 90px;
+        font-weight: 700;
+    }
+    @include pad(){
+        &{
+            background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/banner-sm.png);
+        }
+        &-desert{
+            padding-top: 50%;
+        }
+        &-subtitle{
+            font-size: 20px;
+            line-height: 39px;
+        }
+        &-bigtitle{
+            font-size: 48px;
+            line-height: 67px;
+        }
+    }
+    @include mobile(){
+        &{
+            height: 394px;
+        }
+        &-subtitle{
+            font-size: 16px;
+            line-height: 22px;
+        }
+        &-bigtitle{
+             font-size: 32px;
+             line-height: 45px;
+        }
+    }
+}
+// 四點優勢說明
+.service{
+    &-bg{
+        padding: 60px 0 80px;
+        background-color: #AA06010D;
+    }
+    &{
+        display: flex;
+        justify-content: space-around;
+        align-items: baseline;
+        flex-wrap: wrap;
+        margin-top: 40px;
+    }
+    &-item{
+        width: 20%;
+    }
+    &-icon{
+        margin: 0 auto 40px auto;
+    }
+    &-title{
+        text-align: center;
+        color: #650300;
+        font-size:24px ;
+        line-height: 33px;
+        font-weight: 700;
+        margin-bottom: 4px;
+    }
+    @include pad(){
+        &-bg{
+            padding: 40px 0 56px;
+        }
+        &-item{
+            width: 35%;
+            margin-bottom: 40px;
+        }
+        &-icon{
+            margin: 0 auto 16px auto;
+        }
+        &-title{
+            font-size:20px ;
+            line-height: 28px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+    }
+    @include mobile(){
+        &-bg{
+            padding: 32px 0 40px;
+        }
+        &{
+            margin-top: 20px;
+        }
+        &-item{
+            width: 90%;
+        }
+    }
+}
+// 間距
+.ml-lg{
+    margin-left: 32px;
+}
+.mr-lg{
+    margin-right: 32px;
+}
+@include pad(){
+    .mr-lg{
+        margin-right: 0;
+    }
+    .ml-lg2{
+        margin-left: 32px;
+    }
+}
+@include mobile(){
+    .ml-lg{
+        margin-left: 0;
+    }
+    .mr-lg{
+        margin-right: 0;
+    }
+    .ml-lg2{
+        margin-left: 0;
+    }
+}
+// 經典系列
+.classic{
+    &-bg{
+        padding: 60px 0 80px;
+    }
+    &{
+        margin-top: 40px;
+    }
+    &-item{
+        display: flex;
+        align-items: center;
+        margin-bottom: 32px;
+    }
+    &-reverse{
+        flex-direction: row-reverse;
+    }
+    &-img{
+        width: 60%;
+    }
+    &-box{
+        display: flex;
+        align-items: center;
+        font-family: 'Roboto';
+        font-style: italic;
+        font-weight: 900;
+        font-size: 48px;
+        line-height: 63px;
+        color: #AA0601;
+    }
+    &-icon{
+        width: 48px;
+        margin-right: 8px; 
+    }
+    &-mobileicon{
+        display: none;
+    }
+    @include pad(){
+        &-bg{
+            padding: 40px 0 56px;
+        }
+        &{
+            margin-top: 32px;
+        }
+        &-reverse{
+            flex-direction: row;
+        }
+        &-box{
+            font-size: 28px;
+            line-height: 37px;
+        }
+        &-icon{
+            width: 32px;
+        }
+    }
+    @include mobile(){
+        &-bg{
+            padding: 32px 0 40px;
+        }
+        &{
+            margin-top: 20px;
+        }
+        &-item{
+            position: relative;
+        }
+        &-img{
+            width: 100%;
+            margin: 0 auto;
+        }
+        &-box{
+            color: #fff;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        &-icon{
+            display: none;
+        }
+        &-mobileicon{
+            display: block;
+            width: 32px;
+            margin-right: 8px;
+        }
+    }
+}
+// 聯名設計
+.joint{
+    &-bg{
+        background-position: center center;
+        background-size: cover;
+        background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/bg.png);
+        padding: 60px 0 80px;
+    }
+    &-white{
+        color: #fff;
+    }
+    &-design{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 40px;
+    }
+    &-item{
+        position: relative;
+        width: 49%;
+    }
+    &-item::before{
+        content: "";
+        position: absolute;
+        top:0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(255 , 255 , 255 , 0.5);
+    }
+    &-title{
+        position: absolute;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        color: #AA0601;
+        font-family: 'Roboto';
+        line-height: 95px;
+        font-size: 72px;
+        font-weight: 700;
+        white-space: nowrap;
+    }
+    @include pad(){
+        &-bg{
+            padding: 40px 0 56px;
+        }
+        &-design{
+            margin-top: 32px;
+        }
+        &-title{
+            font-size: 32px;
+            line-height: 43px;
+        }
+    }
+    @include mobile(){
+        &-bg{
+            padding: 32px 0 40px;
+        }
+        &-design{
+            flex-direction: column;
+            margin-top: 20px;
+        }
+        &-item{
+            width: 100%;
+        }
+        &-item:first-child{
+            margin-bottom: 16px;
+        }
+    }
+}
+// 顧客推薦
+.customer{
+    &-bg{
+        padding: 60px 0 0;
+    }
+    &{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 40px;
+    }
+    &-item{
+        width: 255px;
+        height: 460px;
+    }
+    &-img{
+        width: 100%;
+        border-radius: 5px 5px 0 0;
+    }
+    &-body{
+        border-radius: 0 0 5px 5px;
+    }
+    &-body{
+        padding: 14px 16px;
+        border: 1px solid #DEE2E6;
+        font-family: 'Roboto';
+    }
+    &-title{
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 19px;
+        margin-bottom: 7px;
+    }
+    &-message{
+        margin-bottom: 10px;
+    }
+    &-date{
+        font-size: 14px;
+        color: #707070;
+    }
+    @include pad(){
+        &-bg{
+            padding: 40px 0 56px;
+        }
+        &{
+            margin-top: 32px;
+        }
+        &-item{
+            width: 45%;
+            height: 460px;
+        }
+        &-message-pb{
+            padding-bottom: 8%;
+        }
+    }
+    @include mobile(){
+        &-bg{
+            padding: 32px 0 40px;
+        }
+        &{
+            margin-top: 20px;
+        }
+        &-item{
+            width: 100%;
+        }
+        &-message-pb{
+            padding-bottom: 0;
+        }
+    }
+}
+// 聯絡表單
+.contact-form{
+    &-bg{
+        background-color: #AA06010D;
+        padding: 60px 0 80px;
+    }
+    &-title{
+        color: #000;
+    }
+    &-form{
+        width: 60%;
+        margin: 24px auto 0;
+    }
+    &-text{
+        margin-bottom: 20px;
+    }
+    &-box{
+        margin-bottom: 16px;
+    }
+    &-input{
+        display: block;
+        width: 100%;
+        border:1px solid #000;
+        height: 50px;
+        padding: 20px;
+        color: #000000;
+        font-size: 15px;
+        font-weight: 600;
+        background-color: #AA06010D;
+    }
+    &-textarea{
+        height: 136px;
+    }
+    @include pad(){
+        &-bg{
+            padding: 40px 0 56px;
+        }
+        &{
+            margin: 0 auto;
+            width: 80%;
+        }
+        &-input{
+            height: 36px;
+        }
+        &-textarea{
+            height: 120px;
+        }
+    }
+    @include mobile(){
+        &-bg{
+            padding: 32px 0 40px;
+        }
+        &{
+            width: 100%;
+        }
+        &-textarea{
+            height: 100px;
+        }
+    }
+}
+.checkbox-box{
+    margin-bottom: 40px;
+}
+.subimt{
+    display: block;
+    width: 70%;
+    border:none;
+    padding: 16px 0;
+    font-weight: 700;
+    margin: 0 auto;
+    cursor: pointer;
+    color: #fff;
+    background-color: #AA0601;
+}
+.subimt:hover{
+    background-color: #ce5a56;
+}
+@include pad(){
+    .subimt{
+        width: 60%;
+    }
+}

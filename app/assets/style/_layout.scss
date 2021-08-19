@@ -81,144 +81,154 @@ body {
 }
 // footer
 .footer{
-    padding: 30px 0;
-    background-color: #AA0601;
-    .footer-item{
+    &{
+        padding: 30px 0;
+        background-color: #AA0601;
+    }
+    &-item{
         display: flex;
         justify-content: space-between;
     }
-    .footer-menu{
+    &-menu{
         padding-top: 16px;
         display: flex;
         margin-bottom: 36px;
-        .footer-link{
-            display: block;
-            color: #fff;
-            line-height: 22px;
-            padding-right: 48px;
-        }
-        .footer-link:hover{
-            opacity: 0.5;
-        }
     }
-    .contact{
-        .contact-item{
-            display: flex;
-            margin-bottom: 19px;
-        }
-        .contact-icon{
-            width: 44px;
-            display: inline-block;
-            vertical-align: middle;
-            margin-right: 17px;
-        }
-        .contact-link{
-            display: block;
-            font-family: 'Roboto';
-            color: #fff;
-            font-size: 36px;
-            line-height: 48px;
-        }
+    &-link{
+        display: block;
+        color: #fff;
+        line-height: 22px;
+        padding-right: 48px;
     }
-    .sns{
-        display: flex;
-        .sns-item{
-            margin-right: 32px;
-        }
-        .sns-item:nth-last-child(1){
-            margin-right: 0;
-        }
-        .sns-link{
-            display: block;
-        }
-        .sns-link:hover{
-            opacity: 0.5;
-        }
+    &-link:hover{
+        opacity: 0.5;
     }
     @include pad(){
-        .footer-menu{
+        &-menu{
             margin-bottom: 26px;
-            .footer-link{
-                padding-right: 40px;
-            }
         }
-        .contact{
-            margin-bottom: 8px;
-            .contact-icon{
-                width: 24px;
-                margin-right: 12px;  
-            }
-            .contact-link{
-                font-size: 20px;
-                line-height: 26px;
-            }
+        &-link{
+            padding-right: 40px;
         }
     }
     @include mobile(){
-        .footer-menu{
+        &-menu{
             display: none;
         }
-        .contact{
-            .contact-icon{
-                width: 20px;
-            }
-            .contact-link{
-                font-size: 16px;
-                line-height: 21px;
-            }
-        }
-        .sns{
-            .sns-item{
-                margin-right: 24px;
-            }
-            .sns-icon{
-                width: 24px;
-            }
-        }
     }
-    .footer-info{
+    &-info{
         padding-top: 20px;
         color: #fff;
         display: flex;
         justify-content: space-between;
-        .footer-text{
-            font-family: 'Roboto';
-            line-height: 21px;
+    }
+    &-text{
+        font-family: 'Roboto';
+        line-height: 21px;
+    }
+    @include mobile(){
+        &-info{
+            flex-direction: column;
         }
-        .contract{
-            display: flex;
-        }
-        .contract-item{
-            margin-right: 62px;
-        }
-        .contract-item:nth-last-child(1){
-            margin-right: 0;
-        }
-        .contract-link{
-            display: block;
-            color: #fff;
-            font-size: 14px;
-            line-height: 20px;  
+        &-text{
+            margin-bottom: 10px;
         }
     }
+}
+.contact{
+    &-item{
+        display: flex;
+        margin-bottom: 19px;
+    }
+    &-icon{
+        width: 44px;
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 17px;
+    }
+    &-link{
+        display: block;
+        font-family: 'Roboto';
+        color: #fff;
+        font-size: 36px;
+        line-height: 48px;
+    }
     @include pad(){
-        .contract-item{
+        &{
+            margin-bottom: 8px;
+        }
+        &-icon{
+            width: 24px;
+            margin-right: 12px;  
+        }
+        &-link{
+            font-size: 20px;
+            line-height: 26px;
+        }
+    }
+    @include mobile(){
+        &-icon{
+            width: 20px;
+        }
+        &-link{
+            font-size: 16px;
+            line-height: 21px;
+        }
+    }
+}
+.sns{
+    &{
+        display: flex;
+    }
+    &-item{
+        margin-right: 32px;
+    }
+    &-item:nth-last-child(1){
+        margin-right: 0;
+    }
+    &-link{
+        display: block;
+    }
+    &-link:hover{
+        opacity: 0.5;
+    }
+    @include mobile(){
+        &-item{
+            margin-right: 24px;
+        }
+        &-icon{
+            width: 24px;
+        }
+    }
+}
+.contract{
+    &{
+        display: flex;
+    }
+    &-item{
+        margin-right: 62px;
+    }
+    &-item:nth-last-child(1){
+        margin-right: 0;
+    }
+    &-link{
+        display: block;
+        color: #fff;
+        font-size: 14px;
+        line-height: 20px;  
+    }
+    @include pad(){
+        &-item{
             margin-right: 24px;
         }
     }
     @include mobile(){
-        .footer-info{
-            flex-direction: column;
-            .footer-text{
-                margin-bottom: 10px;
-            }
-            .contract{
-                flex-wrap: wrap;
-            }
-            .contract-item{
-                width: 50%;
-                margin-bottom: 10px;
-            }
+        &{
+            flex-wrap: wrap;
+        }
+        &-item{
+            width: 50%;
+            margin-bottom: 10px;
         }
     }
 }

@@ -1,5 +1,5 @@
 //產品列表
-.product2-item{
+.product-other-item{
     width: calc(100% / 3 - 2%);
     margin: 0 1% 104px;
 }
@@ -18,34 +18,27 @@
     }
 }
 // 頁碼
-.pagination-other-bg{
-    display: none;
-}
-@include mobile(){
-    .pagination-other-bg{
-        display: block;
+.pagination-other{
+    &-bg{
+        display: none;
     }
-    .pagination-other-bg{
-        .pagination-other{
+    @include mobile(){
+        &-bg{
+            display: block;
+        }
+        &{
             display: flex;
             justify-content: center;
         }
-        .pagination-other-link{
+        &-link{
             font-size: 17px;
             line-height: 20px;
             padding: 6px 10px;
             border: 1px solid #555555;
         }
-        .pagination-other-link:hover{
+        &-link:hover{
             color: #fff;
             background-color: #000;
-        }
-        .active{
-            color: #fff;
-            background-color: #000;
-        }
-        .next{
-            background-color: #F2F2F2;
         }
     }
 }

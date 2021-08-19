@@ -1,116 +1,124 @@
 // 門市據點
-.store-detailed-bg{
-    .store-detailed-body{
+.store-detailed{
+    &-bg{
+        padding: 32px 0 160px;
+    }
+    @include pad(){
+        &-bg{
+            padding: 24px 0 96px;
+        }
+    }
+    @include mobile(){
+        &-bg{
+            padding: 20px 0 56px;
+        }
+    }
+    &-body{
         display: flex;
         align-items: center;
         justify-content: space-between;
     }
     // 間距
-    .store-detailed-ml-img{
+    &-ml-img{
         margin-left: 3px;
     }
-    .store-detailed-ml{
+    &-ml{
         margin-left: 8px;
     }
-    padding: 32px 0 160px;
-    @include pad(){
-        padding: 24px 0 96px;
-    }
-    @include mobile(){
-        padding: 20px 0 56px;
-    }
-    .store-detailed-card{
+    &-card{
         display: flex;
         flex-wrap: wrap;
     }
-    .store-detailed-item{
+    &-item{
         width: 100%;
         margin-right: 30px;
         margin-bottom: 2%;
     }
-    .store-detailed-img{
+    &-img{
         width: 100%;
     }
-    .store-detailed-img-h{
+    &-img-h{
         height: 232.5px;
     }
-    .store-detailed-title{
+    &-title{
         border:1px solid #00000020;
         font-size: 24px;
         line-height: 36px;
         padding: 12px 0 12px 24px;
     }
-    .store-detailed-list{
+    &-list{
         border:1px solid #00000020;
         padding: 16px 26px;
     }
-    .store-detailed-tel{
+    &-tel{
         color: #000;
     }
-    .store-detailed-info{
+    &-info{
         display: flex;
         align-items: center;
         margin-bottom: 8px;
     }
-    .store-detailed-icon{
+    &-icon{
         width: 20px;
     }
-    .store-detailed-text{
+    &-text{
         font-size: 20px;
         line-height: 30px;
     }
-    .iframe-map{
-        display: none;
-    }
     @include pad(){
-        .store-detailed-body{
+        &-body{
             flex-direction: column;
         }
-        .store-detailed-card{
+        &-card{
             margin-bottom: 30px;
         }
-        .store-detailed-item{
+        &-item{
             margin: 0;
             padding: 0;
             display: flex;
             align-items: center;
             justify-content: space-between;
         }
-        .store-detailed-img{
+        &-img{
             width: calc(100% / 2);
         }
-        .store-detailed-title{
+        &-title{
             font-size: 16px;
             line-height: 24px;
             padding: 8px 0 8px 16px;
         }
-        .store-detailed-list{
+        &-list{
             border:1px solid #00000020;
             padding: 16px 26px;
         }
-        .store-detailed-icon{
+        &-icon{
             width: 16px;
         }
-        .store-detailed-text{
+        &-text{
             font-size: 14px;
             line-height: 21px;
         }
     }
     @include mobile(){
-        .store-detailed-item{
+        &-item{
             flex-direction: column;
         }
-        .store-detailed-img{
+        &-img{
             width: 100%;
         }
-        .store-detailed-list{
+        &-list{
             width: 345px;
         }
-        .iframe{
-            display: none;
-        }
-        .iframe-map{
-            display: block;
-        }
+    }
+}
+.iframe-map{
+    display: none;
+}
+@include mobile(){
+    .iframe{
+        display: none;
+    }
+    .iframe-map{
+        display: block;
     }
 }

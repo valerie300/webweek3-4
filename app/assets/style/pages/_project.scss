@@ -1,0 +1,301 @@
+// breadcrumb
+.breadcrumb-plan{
+    &-bg{
+        background-color: #650300;
+    }
+    &-box{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &-list{
+        display: flex;
+    }
+    &-item{
+        margin-right: 48px;
+    }
+    &-link{
+        color: #fff;
+        font-size: 20px;
+        line-height: 40px;
+        font-weight: 700;
+    }
+    &-link:hover{
+        opacity: 0.5;
+    }
+    @include pad(){
+        &-link{
+            font-size: 16px;
+            line-height: 54px;
+        }
+    }
+    @include mobile(){
+        &-item{
+            margin-right: 16px;
+        }
+        &-link{
+            font-size: 16px;
+            line-height: 48px;
+        }
+    }
+}
+@include mobile(){
+    .search-plan{
+        display: none;
+    }
+}
+// 內容
+.project{
+    @include mobile(){
+        &{
+            padding-bottom: 56px;
+        }
+    }
+    // 文章連結
+    &-list{
+        display: flex;
+        margin-top: 15px;
+    }
+    &-link{
+        text-decoration: none;
+        color: #000;
+    }
+    &-link:last-child{
+        color: #AA0601;
+    }
+    @include pad(){
+        &-list{
+            margin-top: 8px;
+        }
+        &-link{
+            font-size: 14px;
+            line-height: 24px;
+        }
+    }
+}
+// 文章頭標籤
+.project-keyword{
+    display: flex;
+    margin-top: 20px;
+}
+.keyword-link{
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #AA0601;
+}
+.keyword-link:first-child{
+    margin-right: 10px;
+}
+@include pad(){
+    .project-keyword{
+        margin-top: 0;
+    }
+    .keyword-link{
+        font-size: 16px;
+        line-height: 36px;
+    }
+}
+@include mobile(){
+    .keyword-link{
+        font-size: 14px;
+        line-height: 30px;
+    }
+}
+// 文章
+.article{
+    &{
+        width: 825px;
+    }
+    &-content{
+        display: flex;
+    }
+    &-date{
+        font-size: 16px;
+        font-weight: normal;
+    }
+    &-img{
+        max-width: 100%;
+    }
+    &-word{
+        line-height: 1.5;
+        padding: 24px 0;
+    }
+    @include pad(){
+        &-date{
+            font-size: 14px;
+        }
+        &{
+            width: 510px;
+        }
+    }
+    @include mobile(){
+        &-content{
+            flex-direction: column;
+        }
+        &-img{
+            width: 100%;
+        }
+        &{
+            width: 345px;
+            margin-bottom: 20px;
+        }
+    }
+}
+.heading{
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 75px;
+    @include pad(){
+        .heading{
+            font-size: 32px;
+            line-height: 35px;
+        }
+    }
+    @include mobile(){
+        .heading{
+            font-size: 20px;
+            line-height: 26px;
+            color: #650300;
+        }
+    }
+}
+.sub-standard{
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 42px;
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    @include pad(){
+        .sub-standard{
+            font-size: 16px;
+            line-height:40px;
+        }
+    }
+    @include mobile(){
+        .sub-standard{
+            font-size: 14px;
+            line-height:30px;
+            margin-bottom: 20px;
+        }
+    }
+}
+// share
+.share{
+    &{
+        display: flex;
+        align-items: center;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid #000;
+    }
+    &-box{
+        width: 825px;
+    }
+    &-title{
+        font-weight: bold;
+        margin-right: 15px;
+    }
+    &-list{
+        display: flex;
+        width: 60px;
+        justify-content: space-between;
+    }
+    @include pad(){
+        &-box{
+            width: 700px;
+        }
+    }
+    @include mobile(){
+        &-box{
+            width: 345px;
+        }
+    }
+}
+.page{
+    &-go{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 160px;
+    }
+    &-item{
+        display: flex;
+        align-items: center;
+        color: #000;
+    }
+    @include mobile(){
+        &-go{
+            flex-direction: column;
+            margin-bottom: 0;
+        }
+        &-item{
+            font-size: 14px;
+        }
+    }
+}
+.previous-icon,.next-icon{
+    width: 16px;
+    height: 16px;
+}
+.previous-icon{
+    margin-right: 5px;
+    transform: rotate(180deg);
+}
+.next-icon{
+    margin-left: 5px;
+}
+// side tag
+.side-tag{
+    margin: 30px 0;
+    @include mobile(){
+        .side-tag{
+            margin: 0;
+        }
+    }
+}
+.tag{
+    &-title{
+        display: flex;
+        align-items: center;
+        color: #AA0601;
+        font-size: 28px;
+        font-weight: bold;
+    }
+    &-heading{
+        margin-left: 10px;
+    }
+    &-link{
+        text-decoration: none;
+        color: #AA0601;
+        font-size: 22px;
+        font-weight: bold;
+        display: inline-block;
+        margin-left: 10px;
+    }
+    @include pad(){
+        &-title{
+            font-size: 20px;
+        }
+        &-link{
+            font-size: 16px;
+        }
+    }
+    @include mobile(){
+        &-title{
+            margin-bottom: 10px;
+        }
+        &-heading{
+            margin-left: 0;
+        }
+        &-icon{
+            width: 25px;
+        }
+    }
+}
+.more-tag{
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 1.5;
+}

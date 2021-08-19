@@ -28,14 +28,14 @@
     }
 }
 // 下拉選單
-.dropdown-bg{
-    .dropdown-label{
+.dropdown{
+    &-label{
         font-size: 24px;
         line-height: 33px;
         font-weight: 700;
         vertical-align: middle;
     }
-    .dropdown-control{
+    &-control{
         width: 325px;
         height: 45px; 
         border: 1px solid #CED4DA;
@@ -46,25 +46,25 @@
         margin-left: 20px;
     }
     @include pad(){
-        .dropdown-label,.dropdown-control{
+        &-label,&-control{
             font-size: 16px;
             line-height: 22px;
         }
-        .dropdown-control{
+        &-control{
             width: 237px;
             height: 46px;
         }
     }
     @include mobile(){
-        .dropdown-form{
+        &-form{
             display: flex;
             align-items: center;
         }
-        .dropdown-label,.dropdown-control{
+        &-label,&-control{
             font-size: 14px;
             line-height: 20px;
         }
-        .dropdown-control{
+        &-control{
             width: 277px;
             height: 36px;
             margin-left: 12px;
@@ -72,100 +72,108 @@
     }
 }
 // 門市據點
-.store-bg{
-    // 間距
-    .store-ml{
-        margin-left: 8px;
+.store{
+    &-bg{
+        padding: 32px 0 160px;
     }
-    padding: 32px 0 160px;
     @include pad(){
-        padding: 24px 0 96px;
+        &{
+            padding: 24px 0 96px;
+        }
     }
     @include mobile(){
-        padding: 20px 0 56px;
+        &{
+            padding: 20px 0 56px;
+        }
     }
-    .store-card{
+    // 間距
+    &-ml{
+        margin-left: 8px;
+    }
+    &-card{
         display: flex;
         flex-wrap: wrap;
     }
-    .store-item{
+    &-item{
         width: calc(100% / 3 - 2% );
         margin: 0 1% 2%;
     }
-    .store-img{
+    &-img{
         width: 100%;
     }
-    .store-img-h{
+    &-img-h{
         height: 232.5px;
     }
-    .store-title{
+    &-title{
         border:1px solid #00000020;
         font-size: 24px;
         line-height: 36px;
         padding: 12px 0 12px 24px;
     }
-    .store-list{
+    &-list{
         border:1px solid #00000020;
         padding: 16px 26px;
     }
-    .store-info{
+    &-info{
         display: flex;
         align-items: center;
         margin-bottom: 8px;
     }
-    .icon-address{
-        margin-left: 3px;
-    }
-    .address{
-        align-items: flex-start;
-    }
-    .store-tel{
+    &-tel{
         color: #000;
     }
-    .store-text{
+    &-text{
         font-size: 20px;
         line-height: 30px;
     }
-    .info-btn{
-        display: block;
-        color: #fff;
-        background-color: #000;
-        text-align: center;
-        padding: 20px 0;
-    }
-    .info-btn:hover{
-        background-color: rgb(180, 180, 180);
-    }
     @include pad(){
-        .store-item{
+        &-item{
             width: calc(100% / 2 - 2% );
         }
-        .store-title{
+        &-title{
             font-size: 20px;
             line-height: 30px;
         }
-        .store-text{
+        &-text{
             font-size: 14px;
             line-height: 21px;
         }
-        .store-icon{
+        &-icon{
             width: 16px;
-        }
-        .icon-address{
-            margin: 0;
-        }
-        .info-btn{
-            font-size: 14px;
-            line-height: 20px;
         }
     }
     @include mobile(){
-        .store-item{
+        &-item{
             width: 100%;
         }
-        .store-title{
+        &-title{
             font-size: 16px;
             line-height: 18px;
         }
+    }
+}
+.icon-address{
+    margin-left: 3px;
+}
+.address{
+    align-items: flex-start;
+}
+.info-btn{
+    display: block;
+    color: #fff;
+    background-color: #000;
+    text-align: center;
+    padding: 20px 0;
+}
+.info-btn:hover{
+    background-color: rgb(180, 180, 180);
+}
+@include pad(){
+    .icon-address{
+        margin: 0;
+    }
+    .info-btn{
+        font-size: 14px;
+        line-height: 20px;
     }
 }
